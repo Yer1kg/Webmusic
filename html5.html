@@ -1,0 +1,231 @@
+<!-- Etiqueta tipo documento -->
+<!doctype html>
+
+<!-- Etiqueta inicio html + lenguaje de la página -->
+<html lang="es">
+
+<!-- 
+        HEAD:
+        - Título
+        - Etiquetas META (descripción,etc)
+        - Archivos externos en orden de necesidad para que se visualice la página de forma correcta:
+            - Archivos externos CSS
+            - Archivos externos JAVASCRIPTS
+        - CSS de la vista
+        - SCRIPTS de la vista
+    
+    -->
+
+<head>
+  <!-- Favicon web -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- Título de la web -->
+  <title>Musicaweb</title>
+
+  <!-- Etiquetas META -->
+  <meta charset="utf-8">
+  <meta name="description" content="Una web sobre Música de todo tipo">
+  <meta name="keywords" content="Música, Instrumentos, Rock, Canciones">
+  <meta name="author" content="Yerik">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- Bootstrap CSS Externo -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <!-- our project just needs Font Awesome Solid + Brands -->
+  <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+
+  <!-- Animación -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+  <!-- JAVASCRIPT Externo -->
+
+  <!-- CSS de la vista -->
+  <style>
+    .fondonegro {
+      background-color: black;
+    }
+
+    .maineo {
+      background-color: darkorange;
+    }
+
+    .boton {
+      color: white;
+      background-color: deeppink;
+      border-color: deeppink;
+    }
+  </style>
+
+  <!-- SCRIPTS de la vista -->
+  <script>
+
+  </script>
+</head>
+
+<!-- 
+    BODY:
+    - Contenido principal de la web
+    - Suele contener etiquetas comunes:
+        - HEADER
+        - NAV
+        - ASIDE
+        - SECTION
+        - ARTICLE
+        - DIV
+        - H1
+        - P
+        - A
+-->
+
+<body class="bg-white">
+
+  <header class="bg-dark">
+    <div class="container-fluid">
+      <nav class="container navbar navbar-expand-md navbar-white bg-dark"
+        aria-label="Third navbar example Navegación">
+
+        <a class="navbar-brand text-white active" href="#">
+          <h1>Músicaweb</h1>
+        </a>
+
+        <button class="navbar-toggler collapsed bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse navbar-dark float-end" id="navbarsExample03">
+
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 text-white float-end">
+            <li class="nav-item text-white">
+
+              <a class="nav-link" aria-current="page" href="#">Inciar Sesión</a>
+
+            </li>
+
+            <li class="nav-item text-white">
+
+              <a class="nav-link" aria-current="page" href="#">Registrarse</a>
+
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+
+    <div class="px-2 py-5 maineo text-center text-white">
+      <h2>Una pagina web sobre música</h2>
+      <p class="lead text-center">Aquí veras distintos géneros de música</p>
+      <p class="lead text-center">
+        <a href="#" class="btn btn-lg btn-secondary fw-bold text-white boton">Leer Mas</a>
+      </p>
+    </div>
+
+  </section>
+
+        <section class="py-5 bg-dark">
+
+              <div class="container">
+
+                <div class="col row featurette bg-dark text-white">
+
+                  <div class="col offset-md-1 col-md-6">
+
+                    <h2 class="featurette-heading fw-normal lh-1">Secretos de música para artistas</h2>
+                    <p class="lead text-White">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                      texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
+                      impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                      de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                      ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue
+                      popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem
+                      Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye
+                      versiones de Lorem Ipsum.</p>
+
+                  </div>
+                  
+                  <div class="col-md-5">
+                    <img class="bd-placeholder-img rounded-circle float-end img-fluid" src="assets/img/01.jpg"></img>
+                  </div>
+
+                </div>
+
+                <div class="px-8 py-4 bg-dark">
+
+                  <div class="col row featurette bg-dark text-white">
+
+                    <div class="col-md-5">
+                      <img class="bd-placeholder-img rounded-circle float-end img-fluid" src="assets/img/02.jpg"></img>
+                    </div>
+                    
+                    <div class="col-md-5 offset-1">
+
+                      <h2 class="featurette-heading fw-normal lh-1">¡Nosotros te saludamos!</h2>
+                      <p class="lead text-White">Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría
+                        sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no
+                        parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no
+                        hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se
+                        encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el
+                        único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes
+                        del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que
+                        parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o
+                        palabras no características del lenguaje, etc.</p>
+
+                    </div>
+
+                  </div>
+
+                  <div class="px-8 py-5 bg-dark">
+
+                    <div class="col row featurette bg-dark text-white">
+
+                      <div class="col-md-6">
+                        
+                        <h2 class="featurette-heading fw-normal lh-1">¡Aquí tenemos Rock!</h2>
+                        <p class="lead text-White">El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es
+                          reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et
+                          Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en
+                          Inglés de la traducción realizada en 1914 por H. Rackham.</p>
+                      </div>
+
+                      <div class="col-md-5">
+                        <img class="bd-placeholder-img rounded-circle float-end img-fluid" src="assets/img/03.jpg"></img>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+        </section>
+
+    <section class="text-center py-3 px-4  fondonegro">
+
+      <footer class="pt-4 my-md-5 pt-md-5 text-white">
+
+        <div>
+          <p>copyright <i class="fa-regular fa-copyright text-white"></i> Músicaweb 2022</p>
+        </div>
+
+      </footer>
+
+    </section>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
